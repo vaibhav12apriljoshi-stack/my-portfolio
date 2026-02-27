@@ -1,0 +1,554 @@
+git @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Rajdhani:wght@400;500;700&display=swap");
+
+:root {
+  --saffron: #ff9933;
+  --india-green: #138808;
+  --deep-blue: #0a3a78;
+  --ink: #0f172a;
+  --card: #ffffffd9;
+  --border: #dbe4f1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Rajdhani", sans-serif;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 12% 8%, #fffdf6 0, transparent 44%),
+    radial-gradient(circle at 85% 80%, #f5fff3 0, transparent 39%),
+    linear-gradient(135deg, #fffdf8 0%, #ffffff 45%, #f8fff6 100%);
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: -12% -20%;
+  width: 140vw;
+  height: 130vh;
+  background:
+    radial-gradient(circle at 50% 50%, #1c4c9e 0 4.8%, transparent 5.2%),
+    radial-gradient(circle at 50% 50%, transparent 0 14%, #1c4c9e 14.2% 14.9%, transparent 15%),
+    linear-gradient(to bottom, #ff9933 0 33%, #ffffff 33% 66%, #138808 66% 100%);
+  background-size: 130% 130%, 130% 130%, 100% 100%;
+  filter: blur(0.6px) saturate(1.24) brightness(1.12);
+  opacity: 0.24;
+  pointer-events: none;
+  z-index: 0;
+  transform-origin: left center;
+  animation: flagWave 12s ease-in-out infinite alternate;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 15%, #fffffff0, transparent 48%),
+    radial-gradient(circle at 80% 88%, #ffffffd1, transparent 52%),
+    linear-gradient(120deg, #ffffff2b 0%, transparent 38%, #ffffff26 65%, transparent 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+#app {
+  position: relative;
+  z-index: 2;
+}
+
+.page-shell {
+  width: min(1100px, 92vw);
+  margin: 0 auto;
+  padding: 2rem 0 4rem;
+}
+
+.intro-section {
+  min-height: 100vh;
+  position: relative;
+  display: grid;
+  align-items: center;
+  overflow: hidden;
+  padding: 2.4rem 0 1.4rem;
+  background: transparent;
+  border-bottom: 1px solid #d7d7d7;
+}
+
+.flag-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.intro-container {
+  position: relative;
+  z-index: 2;
+  width: min(1160px, 92vw);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.8rem;
+  align-items: center;
+}
+
+.intro-copy {
+  padding: 0.6rem 0.8rem 0.6rem 0.2rem;
+  background: #ffffff8f;
+  border: 1px solid #ffffffba;
+  border-radius: 18px;
+  backdrop-filter: blur(1.5px) saturate(1.08);
+  box-shadow: 0 10px 30px #14366522;
+}
+
+.intro-copy h1 {
+  margin: 0.45rem 0 0.9rem;
+  font-family: "Rajdhani", sans-serif;
+  font-size: clamp(2.4rem, 8vw, 5.4rem);
+  line-height: 0.88;
+  letter-spacing: 0.03rem;
+  font-weight: 700;
+  color: #114b92;
+  text-transform: uppercase;
+  max-width: 8ch;
+  text-shadow: 0 1px 0 #ffffffc2;
+}
+
+.intro-copy p {
+  margin: 0 0 0.8rem;
+  font-size: clamp(1rem, 1.7vw, 1.15rem);
+  line-height: 1.7;
+  max-width: 34ch;
+  color: #0f1f37;
+}
+
+.intro-copy p strong {
+  color: #0b3a7c;
+}
+
+.intro-title-block {
+  display: grid;
+  grid-template-columns: repeat(2, 112px);
+  gap: 8px;
+}
+
+.intro-title-block span {
+  display: block;
+  height: 14px;
+  border-radius: 2px;
+}
+
+.intro-title-block span:nth-child(1),
+.intro-title-block span:nth-child(2) {
+  background: #ff9933;
+}
+
+.intro-title-block span:nth-child(3),
+.intro-title-block span:nth-child(4) {
+  background: #5d8f45;
+}
+
+.intro-visual {
+  display: grid;
+  place-items: center;
+}
+
+.intro-visual img {
+  width: min(620px, 100%);
+  height: auto;
+  display: block;
+}
+
+.hero {
+  padding: 2rem 1rem 2.3rem;
+  border-radius: 26px;
+  border: 1px solid #ffd7ad;
+  background:
+    linear-gradient(110deg, #fff7ea, #ffffff 40%, #efffea),
+    linear-gradient(90deg, var(--saffron) 0 33%, #ffffff 33% 66%, var(--india-green) 66% 100%);
+  box-shadow: 0 20px 55px #10264e17;
+  animation: rise 650ms ease-out;
+}
+
+.hero-top {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-copy {
+  text-align: left;
+}
+
+.kicker {
+  margin: 0;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--deep-blue);
+}
+
+.hero h1 {
+  font-family: "Merriweather", serif;
+  font-size: clamp(2rem, 4vw, 3.3rem);
+  margin: 0.4rem 0;
+}
+
+.hero-sub {
+  margin: 0;
+  font-size: 1.15rem;
+  color: #233557;
+}
+
+.pill-row {
+  margin-top: 1.1rem;
+  display: flex;
+  gap: 0.7rem;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.pill-row span {
+  border-radius: 999px;
+  padding: 0.35rem 1rem;
+  font-weight: 700;
+  color: #102344;
+  border: 1px solid #cad7f2;
+  background: #ffffffce;
+}
+
+.hero-media {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.7rem;
+  width: min(360px, 100%);
+}
+
+.media-card {
+  border: 1px solid #c8d5ed;
+  border-radius: 14px;
+  padding: 0.45rem;
+  background: #ffffffe6;
+  text-align: center;
+}
+
+.media-card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+.media-card p {
+  margin: 0.45rem 0 0.2rem;
+  font-weight: 700;
+  color: #163b7a;
+}
+
+.content-grid {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 1.2rem;
+  box-shadow: 0 10px 40px #0d2a5710;
+  animation: rise 700ms ease-out;
+}
+
+.card h2 {
+  font-family: "Merriweather", serif;
+  margin-top: 0;
+  color: var(--deep-blue);
+}
+
+.profile-card {
+  grid-column: span 8;
+}
+
+.facts-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.fact-item {
+  border: 1px solid #d6e1f3;
+  border-radius: 14px;
+  padding: 0.8rem;
+  background: #fefefe;
+}
+
+.fact-item p {
+  margin: 0;
+  font-weight: 700;
+  color: #385074;
+}
+
+.fact-item h3 {
+  margin: 0.22rem 0 0;
+  font-size: 1.05rem;
+}
+
+.about-card {
+  grid-column: span 4;
+}
+
+.note {
+  margin: 0.8rem 0 0;
+  border-left: 3px solid var(--saffron);
+  padding-left: 0.6rem;
+  font-weight: 500;
+}
+
+.manifesto-card {
+  grid-column: span 7;
+}
+
+.manifesto-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.7rem;
+}
+
+.manifesto-grid article {
+  border: 1px solid #dce8f7;
+  border-radius: 14px;
+  padding: 0.75rem;
+  background: #ffffff;
+}
+
+.manifesto-grid h3 {
+  margin: 0;
+  color: #173f84;
+}
+
+.manifesto-grid p {
+  margin: 0.35rem 0 0;
+}
+
+.activism-card {
+  grid-column: span 5;
+}
+
+.election-card {
+  grid-column: span 6;
+}
+
+.election-record {
+  margin-top: 0.8rem;
+  border: 1px solid #dce8f7;
+  border-radius: 14px;
+  padding: 0.7rem;
+  background: #ffffff;
+}
+
+.election-record img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  border: 1px solid #d7e4f6;
+}
+
+.election-record .clean-list {
+  margin-top: 0.7rem;
+}
+
+.gallery-card {
+  grid-column: span 6;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.7rem;
+}
+
+.gallery-item {
+  border: 1px solid #dce8f7;
+  border-radius: 14px;
+  padding: 0.65rem;
+  background: #ffffff;
+}
+
+.gallery-thumb {
+  width: 100%;
+  height: 110px;
+  border-radius: 10px;
+  object-fit: cover;
+  display: block;
+  border: 1px solid #d2e2f7;
+}
+
+.gallery-item h3 {
+  margin: 0.45rem 0 0.15rem;
+  color: #173f84;
+}
+
+.gallery-item p {
+  margin: 0;
+}
+
+.constituency-card {
+  grid-column: span 6;
+}
+
+.citizen-card {
+  grid-column: span 6;
+}
+
+.clean-list {
+  margin: 0;
+  padding-left: 1.1rem;
+  display: grid;
+  gap: 0.45rem;
+}
+
+.citizen-form {
+  display: grid;
+  gap: 0.6rem;
+}
+
+.citizen-form input,
+.citizen-form textarea {
+  width: 100%;
+  border: 1px solid #bfd0ed;
+  border-radius: 10px;
+  padding: 0.65rem 0.72rem;
+  font: inherit;
+  background: #ffffff;
+}
+
+.citizen-form button {
+  border: 0;
+  border-radius: 10px;
+  padding: 0.72rem 1rem;
+  font: inherit;
+  font-weight: 700;
+  color: #ffffff;
+  background: linear-gradient(120deg, #0d3f89, #146cd1);
+  cursor: pointer;
+}
+
+.connect-card {
+  grid-column: 1 / -1;
+  background: linear-gradient(135deg, #fff8ec, #ffffff 44%, #eefceb);
+}
+
+.contact-box {
+  border: 1px dashed #9eb3d8;
+  border-radius: 14px;
+  padding: 0.7rem 0.9rem;
+  background: #ffffffbe;
+}
+
+.contact-box p {
+  margin: 0.26rem 0;
+  font-weight: 600;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes flagWave {
+  0% {
+    transform: translate3d(-2%, -0.5%, 0) rotate(-0.5deg) skewY(-0.4deg);
+    background-position: 0% 50%, 0% 50%, 0% 0%;
+  }
+  25% {
+    transform: translate3d(-0.5%, 0.1%, 0) rotate(0.35deg) skewY(0.35deg);
+    background-position: 18% 50%, 14% 50%, 0% 0%;
+  }
+  50% {
+    transform: translate3d(1.2%, -0.2%, 0) rotate(-0.3deg) skewY(-0.3deg);
+    background-position: 34% 50%, 29% 50%, 0% 0%;
+  }
+  75% {
+    transform: translate3d(2.3%, 0.35%, 0) rotate(0.45deg) skewY(0.35deg);
+    background-position: 50% 50%, 46% 50%, 0% 0%;
+  }
+  100% {
+    transform: translate3d(3.2%, -0.3%, 0) rotate(-0.35deg) skewY(-0.3deg);
+    background-position: 68% 50%, 62% 50%, 0% 0%;
+  }
+}
+
+@media (max-width: 900px) {
+  .intro-container {
+    grid-template-columns: 1fr;
+    gap: 1.1rem;
+  }
+
+  .hero-top {
+    flex-direction: column;
+  }
+
+  .hero-copy {
+    text-align: center;
+  }
+
+  .pill-row {
+    justify-content: center;
+  }
+
+  .profile-card,
+  .about-card,
+  .manifesto-card,
+  .activism-card,
+  .election-card,
+  .gallery-card,
+  .constituency-card,
+  .citizen-card {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 560px) {
+  .intro-title-block {
+    grid-template-columns: repeat(2, 84px);
+  }
+
+  .manifesto-grid,
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-media {
+    grid-template-columns: 1fr;
+  }
+
+  .facts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .page-shell {
+    width: 94vw;
+  }
+
+  .hero {
+    padding: 1.8rem 0.9rem 2rem;
+  }
+}

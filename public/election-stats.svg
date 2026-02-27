@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" role="img" aria-label="Election record statistics board">
+  <rect width="1200" height="420" rx="24" fill="#f8fbff"/>
+  <rect x="20" y="20" width="1160" height="70" rx="14" fill="#0a3a78"/>
+  <text x="60" y="65" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#ffffff">Electoral Journey 2024 - Official Record</text>
+
+  <rect x="40" y="120" width="340" height="250" rx="14" fill="#ffffff" stroke="#d6e2f5" stroke-width="2"/>
+  <text x="70" y="165" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#173f84">Vote Share %</text>
+  <rect x="70" y="195" width="280" height="18" rx="9" fill="#eef3fb"/>
+  <rect x="70" y="195" width="180" height="18" rx="9" fill="#ff9933"/>
+  <text x="70" y="245" font-family="Arial, sans-serif" font-size="20" fill="#385074">Insert official ECI percentage</text>
+
+  <rect x="430" y="120" width="340" height="250" rx="14" fill="#ffffff" stroke="#d6e2f5" stroke-width="2"/>
+  <text x="460" y="165" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#173f84">Booth Performance</text>
+  <rect x="470" y="200" width="42" height="120" rx="10" fill="#138808"/>
+  <rect x="530" y="175" width="42" height="145" rx="10" fill="#ff9933"/>
+  <rect x="590" y="220" width="42" height="100" rx="10" fill="#146cd1"/>
+  <rect x="650" y="160" width="42" height="160" rx="10" fill="#0a3a78"/>
+  <text x="460" y="348" font-family="Arial, sans-serif" font-size="20" fill="#385074">Add top/weak booth clusters</text>
+
+  <rect x="820" y="120" width="340" height="250" rx="14" fill="#ffffff" stroke="#d6e2f5" stroke-width="2"/>
+  <text x="850" y="165" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#173f84">Campaign Stats</text>
+  <text x="850" y="210" font-family="Arial, sans-serif" font-size="20" fill="#385074">Jan Sabhas: ___</text>
+  <text x="850" y="245" font-family="Arial, sans-serif" font-size="20" fill="#385074">Village Meetings: ___</text>
+  <text x="850" y="280" font-family="Arial, sans-serif" font-size="20" fill="#385074">Door-to-door Reach: ___</text>
+  <text x="850" y="315" font-family="Arial, sans-serif" font-size="20" fill="#385074">Total Campaign Days: ___</text>
+</svg>

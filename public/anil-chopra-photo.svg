@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Anil Chopra photo placeholder">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff6ea"/>
+      <stop offset="50%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#ebfae8"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" rx="36" fill="url(#bg)"/>
+  <circle cx="200" cy="150" r="72" fill="#d5dfee"/>
+  <path d="M88 356c12-78 62-122 112-122s100 44 112 122H88z" fill="#b7c7e0"/>
+  <rect x="66" y="304" width="268" height="50" rx="25" fill="#0a3a78"/>
+  <text x="200" y="337" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#fff">ANIL CHOPRA</text>
+</svg>

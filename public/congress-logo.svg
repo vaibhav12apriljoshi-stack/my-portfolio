@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="Indian National Congress hand logo stylized">
+  <rect width="600" height="600" rx="40" fill="#ffffff"/>
+  <rect x="0" y="0" width="200" height="600" fill="#ff9933"/>
+  <rect x="400" y="0" width="200" height="600" fill="#138808"/>
+  <ellipse cx="300" cy="300" rx="190" ry="255" fill="#ffffff" stroke="#0a3a78" stroke-width="14"/>
+
+  <g fill="none" stroke="#0a3a78" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M236 210 L236 338" stroke-width="26"/>
+    <path d="M277 188 L277 338" stroke-width="26"/>
+    <path d="M321 188 L321 338" stroke-width="26"/>
+    <path d="M364 206 L364 338" stroke-width="26"/>
+    <path d="M221 263 C176 250 164 294 200 325 L244 352" stroke-width="24"/>
+    <path d="M235 338 L365 338 C397 338 422 362 422 393 C422 425 396 451 364 451 L265 451 C208 451 165 418 161 364" stroke-width="28"/>
+    <path d="M252 391 L352 391" stroke-width="16"/>
+  </g>
+
+  <text x="300" y="545" text-anchor="middle" font-family="Arial, sans-serif" font-size="54" font-weight="700" fill="#0a3a78">INDIAN NATIONAL CONGRESS</text>
+</svg>
