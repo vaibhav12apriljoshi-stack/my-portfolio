@@ -94,7 +94,7 @@ function App() {
             </div>
             <h1> Jaipur Ka Beta</h1>
             <p>
-              <strong> Jaipur Ka Beta</strong> Born and brought up in the heart of Jaipur, Anil Chopra is deeply rooted in the culture, values, and spirit of the Pink City. Known as “Jaipur Ka Beta,” he represents the voice, aspirations, and concerns of the people with sincerity and dedication.
+              <strong> Anil Chopra </strong> Born and brought up in the heart of Jaipur, Anil Chopra is deeply rooted in the culture, values, and spirit of the Pink City. Known as “Jaipur Ka Beta,” he represents the voice, aspirations, and concerns of the people with sincerity and dedication.
             </p>
             <p>
               His journey reflects a strong commitment to public service, grassroots development, and inclusive progress. With a clear vision for a better future and an unwavering connection to his city, he continues to work tirelessly for the growth and well-being of Jaipur and its people.
