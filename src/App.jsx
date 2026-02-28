@@ -92,16 +92,12 @@ function App() {
               <span />
               <span />
             </div>
-            <h1>Awaaz Jaipur Ka Beta</h1>
+            <h1> Jaipur Ka Beta</h1>
             <p>
-              <strong>Awaaz Jaipur Ka Beta</strong> is a people-first initiative
-              by Anil Chopra to provide a direct platform for citizens of Jaipur
-              Rural to share thoughts, suggestions, and concerns.
+              <strong> Jaipur Ka Beta</strong> Born and brought up in the heart of Jaipur, Anil Chopra is deeply rooted in the culture, values, and spirit of the Pink City. Known as “Jaipur Ka Beta,” he represents the voice, aspirations, and concerns of the people with sincerity and dedication.
             </p>
             <p>
-              Every message is valued, and we aim to respond with accountability.
-              Residents, farmers, youth groups, and local organizations are
-              encouraged to raise issues and development ideas.
+              His journey reflects a strong commitment to public service, grassroots development, and inclusive progress. With a clear vision for a better future and an unwavering connection to his city, he continues to work tirelessly for the growth and well-being of Jaipur and its people.
             </p>
             <p>Scroll down to view the full public portfolio.</p>
           </article>
